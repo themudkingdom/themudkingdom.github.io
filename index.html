@@ -10,7 +10,12 @@
     <img id="green" src="green.png" width="100" />
     <button id="mv" >move！</button>
     <script>
-        
+        var images=document.getElementById("green")
+        images.style.top = '300px';
+        mv.onclick=function(){
+            images.style.top = parseInt(images.style.top) - 10 + 'px'
+            console.log(parseInt(images.style.top))
+        }
     </script>
 </body>
 </html>
