@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
+
 <body class="text-center">
+    <header class="bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap">
+                <a class="mb-2 mb-lg-0 text-white">
+                    icon
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2">
+                    <li class="nav-link px-2 text-white">關於我們</li>
+                    <li class="nav-link px-2 text-white">泥巴王國</li>
+                    <li class="nav-link px-2 text-white">引導動畫</li>
+                    <li class="nav-link px-2 text-white">聯絡我們</li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <h1>再次測試</h1>
     <img id="green" src="green.png" width="100" />
-    <button id="mv" >move！</button>
+    <button id="mv">move！</button>
     <script>
-        var images=document.getElementById("green")
+        var images = document.getElementById("green")
         images.style.top = '300px';
-        mv.onclick=function(){
+        mv.onclick = function () {
             images.style.top = parseInt(images.style.top) - 10 + 'px'
             console.log(parseInt(images.style.top))
         }
     </script>
 </body>
+
 </html>
