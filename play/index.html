@@ -23,7 +23,7 @@
     <header>
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
-                <span class="navbar-brand mb-0 fs-1">觀音靈感歌播放器</span>
+                <span class="navbar-brand mb-0 fs-1" id="nav">觀音靈感歌播放器</span>
             </div>
         </nav>
     </header>
@@ -57,7 +57,14 @@
             music = 0
             function set(num) {
                 music = num
+                if (music == 1) {
+                    document.getElementById("nav").innerText="現在播放：觀音靈感歌 1"
+                }else if(music==2){
+                    document.getElementById("nav").innerText="現在播放：觀音靈感歌 2"
+                }
             }
+
+            
 
 
             function playing() {
