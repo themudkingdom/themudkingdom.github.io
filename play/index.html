@@ -43,7 +43,7 @@
 
                 </div>
                 <div class="col">
-                    <button id="replay">從頭播放</button>
+                    <button onclick="replay" id="replay">從頭播放</button>
 
                 </div>
 
@@ -81,9 +81,21 @@
 
             function pause() {
                 mp3_1.pause()
+                mp3_2.pause()
             }
 
+            function replay() {
+                if (music == 1) {
+                    mp3_1.load()
+                    mp3_1.play()
+                } else if (music == 2) {
+                    mp3_2.load()
+                    mp3_2.play()
+                } else {
+                    alert("請選擇歌曲")
+                }
 
+            }
 
 
         </script>
