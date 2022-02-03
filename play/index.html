@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <audio controls id="music1">
+    <audio id="music1">
         <source src="/play/music1.mp3" type="audio/mpeg">
     </audio>
     <audio id="music2">
@@ -23,27 +23,27 @@
     <header>
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid">
-                <span class="navbar-brand mb-0 fs-1" id="nav">觀音靈感歌播放器</span>
+                <span class="navbar-brand mb-2 fs-1" id="nav">觀音靈感歌播放器</span>
             </div>
         </nav>
     </header>
     <main class="text-center">
-        <div class="container md-2 ">
+        <div class="container mb-2 ">
             <div class="row">
                 <div class="col">
-                    <span><button onclick="set(1)" id="first">觀音靈感歌1</button></span>
-                    <span><button onclick="set(2)" id="second">觀音靈感歌2</button></span>
+                    <span><button onclick="set(1)" type="button" class="btn btn-primary btn-lg mb-3" id="first"><span class="fs-1">觀音靈感歌1</span></button></span>
+                    <span><button onclick="set(2)" type="button" class="btn btn-primary btn-lg mb-3" id="second"><span class="fs-1">觀音靈感歌2</span></button></span>
                 </div>
                 <div class="col">
-                    <button id="play" onclick="playing()">播放</button>
+                    <button id="play" type="button" class="btn btn-primary btn-lg" onclick="playing()"><span class="fs-1">播放</span></button>
 
                 </div>
                 <div class="col">
-                    <button id="pause" onclick="pause()">暫停</button>
+                    <button id="pause" type="button" class="btn btn-primary btn-lg" onclick="pause()"><span class="fs-1"><span class="fs-1">暫停</span></span></button>
 
                 </div>
                 <div class="col">
-                    <button onclick="replay()" id="replay">從頭播放</button>
+                    <button onclick="replay()" type="button" class="btn btn-primary btn-lg" id="replay"><span class="fs-1">從頭播放</span></button>
 
                 </div>
 
