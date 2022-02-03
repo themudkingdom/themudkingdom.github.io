@@ -53,35 +53,15 @@
             var play, pause, replay, m1, m2, music
             var mp3 = document.querySelector("#music1")
             music = 0
-            m1 = document.querySelector("#first")
-            m1.onclick = function () {
-                music = 1
-            }
-            m2 = document.querySelector("#second")
-            m2.onclick = function () {
-                music = 2
-            }
-            // play = document.getElementById("play")
-            // play.onclick = function () {
-            //     console.log(66)
-            //     mp3.play()
-            //         .catch(e=>{
-            //             console.error(e);
-            //         })
-            //     console.log(68)
-            //     console.log(mp3.played)
-            //     console.log(mps.paused)
-            // }
 
-            function playing(){
-                console.log(77)
+            function playing() {
                 mp3.play()
             }
 
-            pause = document.querySelector("#pause")
-            play.onclick = function () {
+            function pause() {
                 mp3.pause()
             }
+
 
 
 
