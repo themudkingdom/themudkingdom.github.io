@@ -58,21 +58,23 @@
             function set(num) {
                 music = num
                 if (music == 1) {
-                    document.getElementById("nav").innerText="現在播放：觀音靈感歌 1"
-                }else if(music==2){
-                    document.getElementById("nav").innerText="現在播放：觀音靈感歌 2"
+                    document.getElementById("nav").innerText = "現在播放：觀音靈感歌 1"
+                } else if (music == 2) {
+                    document.getElementById("nav").innerText = "現在播放：觀音靈感歌 2"
                 }
+                mp3_1.pause()
+                mp3_2.pause()
             }
 
-            
+
 
 
             function playing() {
                 if (music == 1) {
                     mp3_1.play()
-                }else if(music==2){
+                } else if (music == 2) {
                     mp3_2.play()
-                }else{
+                } else {
                     alert("請選擇歌曲")
                 }
             }
