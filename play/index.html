@@ -36,15 +36,11 @@
                     <span><button onclick="set(2)" type="button" class="btn btn-outline-secondary btn-lg mb-3" id="second"><span class="fs-1">觀音靈感歌2</span></button></span>
                 </div>
                 <div class="col">
-                    <button id="play" type="button" class="btn btn-primary btn-lg" onclick="playing()"><span class="fs-1">播放</span></button>
+                    <button id="play" type="button" class="btn btn-primary btn-lg" onclick="playing()"><span class="fs-1">   播放   </span></button>
 
                 </div>
                 <div class="col">
-                    <button id="pause" type="button" class="btn btn-primary btn-lg" onclick="pause()"><span class="fs-1"><span class="fs-1">暫停</span></span></button>
-
-                </div>
-                <div class="col">
-                    <button onclick="replay()" type="button" class="btn btn-primary btn-lg" id="replay"><span class="fs-1">從頭播放</span></button>
+                    <button id="pause" type="button" class="btn btn-primary btn-lg" onclick="pause()"><span class="fs-1"><span class="fs-1">   暫停   </span></span></button>
 
                 </div>
 
@@ -89,19 +85,6 @@
             function pause() {
                 mp3_1.pause()
                 mp3_2.pause()
-            }
-
-            function replay() {
-                if (music == 1) {
-                    mp3_1.load()
-                    mp3_1.play()
-                } else if (music == 2) {
-                    mp3_2.load()
-                    mp3_2.play()
-                } else {
-                    alert("請選擇歌曲")
-                }
-
             }
 
 
