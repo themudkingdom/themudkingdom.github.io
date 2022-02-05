@@ -28,6 +28,8 @@
     <map name="mudkindom">
         <area href="https://facebook.com" shape="poly" coords="" id="d3">
         <area href="https://www.youtube.com/" shape="poly" coords="" id="dbrick">
+        <area href="https://www.youtube.com/" shape="poly" coords="" id="dvolcano">
+
 
     </map>
     <script>
@@ -119,7 +121,68 @@
                 "y": 0.624421296296296
             }
         ]
-        var volcano
+        var volcano = [
+            {
+                "x": 0.433170572916667,
+                "y": 0.334953703703704
+            },
+            {
+                "x": 0.478450520833333,
+                "y": 0.301331018518519
+            },
+            {
+                "x": 0.562044270833333,
+                "y": 0.285416666666667
+            },
+            {
+                "x": 0.619759114583333,
+                "y": 0.289814814814815
+            },
+            {
+                "x": 0.66357421875,
+                "y": 0.318923611111111
+            },
+            {
+                "x": 0.702376302083333,
+                "y": 0.366782407407407
+            },
+            {
+                "x": 0.723763020833333,
+                "y": 0.426041666666667
+            },
+            {
+                "x": 0.677994791666667,
+                "y": 0.471180555555556
+            },
+            {
+                "x": 0.63818359375,
+                "y": 0.530439814814815
+            },
+            {
+                "x": 0.61181640625,
+                "y": 0.549016203703704
+            },
+            {
+                "x": 0.58046875,
+                "y": 0.589699074074074
+            },
+            {
+                "x": 0.552604166666667,
+                "y": 0.589699074074074
+            },
+            {
+                "x": 0.5,
+                "y": 0.556134259259259
+            },
+            {
+                "x": 0.43515625,
+                "y": 0.486226851851852
+            },
+            {
+                "x": 0.407291666666667,
+                "y": 0.411053240740741
+            }
+        ]
         var third = [
             {
                 "x": 0.183496094,
@@ -181,10 +244,20 @@
                 dbrick += brick[index]["x"] * document.getElementById("map").width + "," + brick[index]["y"] * document.getElementById("map").height + ","
             }
         }
+        for (let index = 0; index < volcano.length; index++) {
+            if (index == volcano.length - 1) {
+                dvolcano += volcano[index]["x"] * document.getElementById("map").width + "," + volcano[index]["y"] * document.getElementById("map").height
+            } else {
+                dvolcano += volcano[index]["x"] * document.getElementById("map").width + "," + volcano[index]["y"] * document.getElementById("map").height + ","
+            }
+        }
+
 
         console.log(d3)
         document.getElementById("d3").coords = d3
         document.getElementById("dbrick").coords = dbrick
+        document.getElementById("dvolcano").coords = dvolcano
+
 
 
 
