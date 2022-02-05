@@ -26,71 +26,167 @@
     <img id="map" src="mudkindom.png" class="im" alt="image map" usemap="#mudkindom" />
 
     <map name="mudkindom">
-        <area href="https://facebook.com" shape="poly" coords="" id="a1">
+        <area href="https://facebook.com" shape="poly" coords="" id="d3">
+        <area href="https://www.youtube.com/" shape="poly" coords="" id="dbrick">
+
     </map>
     <script>
         console.log(document.getElementById("map").width)
         console.log(document.getElementById("map").height)
+        var brick = [
+            {
+                "x": 0.58544921875,
+                "y": 0.593287037037037
+            },
+            {
+                "x": 0.61640625,
+                "y": 0.550810185185185
+            },
+            {
+                "x": 0.63955078125,
+                "y": 0.535532407407407
+            },
+            {
+                "x": 0.65859375,
+                "y": 0.510300925925926
+            },
+            {
+                "x": 0.6880859375,
+                "y": 0.467881944444444
+            },
+            {
+                "x": 0.72724609375,
+                "y": 0.431365740740741
+            },
+            {
+                "x": 0.753743489583333,
+                "y": 0.477141203703704
+            },
+            {
+                "x": 0.81572265625,
+                "y": 0.5
+            },
+            {
+                "x": 0.86982421875,
+                "y": 0.521585648148148
+            },
+            {
+                "x": 0.86572265625,
+                "y": 0.583969907407407
+            },
+            {
+                "x": 0.86572265625,
+                "y": 0.716666666666667
+            },
+            {
+                "x": 0.85078125,
+                "y": 0.770428240740741
+            },
+            {
+                "x": 0.818326822916667,
+                "y": 0.813541666666667
+            },
+            {
+                "x": 0.74853515625,
+                "y": 0.863946759259259
+            },
+            {
+                "x": 0.68134765625,
+                "y": 0.893171296296296
+            },
+            {
+                "x": 0.627604166666667,
+                "y": 0.901099537037037
+            },
+            {
+                "x": 0.5876953125,
+                "y": 0.901099537037037
+            },
+            {
+                "x": 0.57236328125,
+                "y": 0.822800925925926
+            },
+            {
+                "x": 0.57236328125,
+                "y": 0.759143518518518
+            },
+            {
+                "x": 0.581705729166667,
+                "y": 0.652951388888889
+            },
+            {
+                "x": 0.58544921875,
+                "y": 0.624421296296296
+            }
+        ]
+        var volcano
+        var third = [
+            {
+                "x": 0.183496094,
+                "y": 0.30462963
+            }, {
+                "x": 0.209440104,
+                "y": 0.238310185
+            }, {
+                "x": 0.252083333,
+                "y": 0.175289352
+            }, {
+                "x": 0.345572917,
+                "y": 0.097164352
+            }, {
+                "x": 0.36656901,
+                "y": 0.115219907
+            }, {
+                "x": 0.457421875,
+                "y": 0.099074074
+            }, {
+                "x": 0.46546224,
+                "y": 0.17494213
+            }, {
+                "x": 0.432877604,
+                "y": 0.330034722
+            }, {
+                "x": 0.39781901,
+                "y": 0.430902778
+            }, {
+                "x": 0.345572917,
+                "y": 0.496585648
+            }, {
+                "x": 0.288704427,
+                "y": 0.501909722
+            }, {
+                "x": 0.260742188,
+                "y": 0.514293981
+            }, {
+                "x": 0.216699219,
+                "y": 0.398206019
+            }, {
+                "x": 0.193945313,
+                "y": 0.325231481
+            }
+        ]
+        var d3 = ""
+        var dbrick = ""
+        for (let index = 0; index < third.length; index++) {
+            if (index == third.length - 1) {
+                d3 += third[index]["x"] * document.getElementById("map").width + "," + third[index]["y"] * document.getElementById("map").height
+            } else {
+                d3 += third[index]["x"] * document.getElementById("map").width + "," + third[index]["y"] * document.getElementById("map").height + ","
+            }
+        }
+        for (let index = 0; index < brick.length; index++) {
+            if (index == brick.length - 1) {
+                dbrick += brick[index]["x"] * document.getElementById("map").width + "," + brick[index]["y"] * document.getElementById("map").height
+            } else {
+                dbrick += brick[index]["x"] * document.getElementById("map").width + "," + brick[index]["y"] * document.getElementById("map").height + ","
+            }
+        }
 
-        var x, y, dot, a1
-        x1 = document.getElementById("map").width * 0.183496094
-        y1 = document.getElementById("map").height * 0.30462963
-
-        x2 = document.getElementById("map").width * 0.209440104
-
-        y2 = document.getElementById("map").height * 0.238310185
-
-        x3 = document.getElementById("map").width * 0.252083333
-
-        y3 = document.getElementById("map").height * 0.175289352
-
-        x4 = document.getElementById("map").width * 0.345572917
-
-        y4 = document.getElementById("map").height * 0.097164352
-
-        x5 = document.getElementById("map").width * 0.36656901
-
-        y5 = document.getElementById("map").height * 0.115219907
-
-        x6 = document.getElementById("map").width * 0.457421875
-
-        y6 = document.getElementById("map").height * 0.099074074
-
-        x7 = document.getElementById("map").width * 0.46546224
-
-        y7 = document.getElementById("map").height * 0.17494213
-
-        x8 = document.getElementById("map").width * 0.432877604
-
-        y8 = document.getElementById("map").height * 0.330034722
-
-        x9 = document.getElementById("map").width * 0.39781901
-
-        y9 = document.getElementById("map").height * 0.430902778
-
-        x10 = document.getElementById("map").width * 0.345572917
-
-        y10 = document.getElementById("map").height * 0.496585648
-
-        x11 = document.getElementById("map").width * 0.288704427
-
-        y11 = document.getElementById("map").height * 0.501909722
-
-        x12 = document.getElementById("map").width * 0.260742188
-
-        y12 = document.getElementById("map").height * 0.514293981
-
-        x13 = document.getElementById("map").width * 0.216699219
-
-        y13 = document.getElementById("map").height * 0.398206019
-
-        x14 = document.getElementById("map").width * 0.193945313
-
-        y14 = document.getElementById("map").height * 0.325231481
+        console.log(d3)
+        document.getElementById("d3").coords = d3
+        document.getElementById("dbrick").coords = dbrick
 
 
-        dot = x1 + "," + y1 + "," + x2 + "," + y2 + "," + x3 + "," + y3 + "," + x4 + "," + y4 + "," + x5 + "," + y5 + "," + x6 + "," + y6 + "," + x7 + "," + y7 + "," + x8 + "," + y8 + "," + x9 + "," + y9 + "," + x10 + "," + y10 + "," + x11 + "," + y11 + "," + x12 + "," + y12 + "," + x13 + "," + y13 + "," + x14 + "," + y14
-        document.getElementById("a1").coords = dot
 
     </script>
 
