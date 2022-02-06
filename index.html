@@ -52,12 +52,29 @@
                         <li class="nav-item" aria-current="true"><a href="#" class="nav-link active px-2 ">泥巴王國</a>
                         </li>
                         <li class="nav-item"><a href="#" class="nav-link px-2 ">引導動畫</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 ">使用說明</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 " data-bs-toggle="modal"
+                                data-bs-target="#info" id="infobutton">使用說明</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <div class="modal fade" id="info" tabindex="-1" aria-labelledby="infoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoLabel">如何使用本網站？</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    請幫我想一個比較可愛的寫法！大致上就是點擊地圖的不同區域可以對應到不同文章這樣。
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <main class="text-center">
         <!-- <iframe src="content.html" frameborder=1></iframe> -->
         <!-- <body > -->
@@ -81,6 +98,7 @@
         </map>
         <script>
             function load() {
+                document.getElementById("infobutton").click
                 console.log(document.getElementById("map").width)
                 console.log(document.getElementById("map").height)
                 var brick = [
