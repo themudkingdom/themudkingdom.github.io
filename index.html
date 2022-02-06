@@ -61,7 +61,7 @@
     <main class="text-center">
         <!-- <iframe src="content.html" frameborder=1></iframe> -->
         <!-- <body > -->
-        <img id="map" src="mudkindom.png" class="im" alt="image map" usemap="#mudkindom" />
+        <img id="map" src="mudkindom.png" class="im" alt="image map" usemap="#mudkindom" onload="load()" />
 
         <map name="mudkindom">
             <area href="https://facebook.com" shape="poly" coords="" id="d3">
@@ -81,9 +81,6 @@
         </map>
         <script>
             function load() {
-                if (document.getElementById("map").width == 0) {
-                    load()
-                }
                 console.log(document.getElementById("map").width)
                 console.log(document.getElementById("map").height)
                 var brick = [
