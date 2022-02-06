@@ -20,7 +20,7 @@ html基本引用
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
@@ -36,3 +36,6 @@ html基本引用
 從圖片中可以看出座標跑掉的狀況只在x軸發生，y軸都正常，而且x直越大跑掉的程度越嚴重，因次推測是跟螢幕比例有關。網頁中圖片上下都是頂到視窗的，只有左右有留白。
 在製作比例數據時除的是圖片的寬度數值，而在網頁呈現實乘的式整個螢幕（包含留白區）的寬度，因此會出現差別。要再想想解決方法。
 解法：把取得螢幕寬度的程式碼改成取得圖片寬度的程式碼，這樣就解決了！
+
+
+csv轉json檔案的網站：https://csvjson.com/csv2json
