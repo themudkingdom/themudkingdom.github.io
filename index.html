@@ -81,7 +81,9 @@
         </map>
         <script>
             function load() {
-
+                if (document.getElementById("map").width == 0) {
+                    load()
+                }
                 console.log(document.getElementById("map").width)
                 console.log(document.getElementById("map").height)
                 var brick = [
