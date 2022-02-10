@@ -79,11 +79,12 @@
         <!-- <iframe src="content.html" frameborder=1></iframe> -->
         <!-- <body > -->
         <img id="map" src="mudkindom.png" class="im" alt="image map" usemap="#mudkindom" onload="load()" />
+        <canvas id="mycanvas"></canvas>
 
         <map name="mudkindom">
             <area href="https://facebook.com" shape="poly" coords="" id="d3">
             <area href="https://ian933024.github.io/article/brickhouse.html" shape="poly" coords="" id="dbrick">
-            <area href="https://www.youtube.com/" shape="poly" coords="" id="dvolcano">
+            <!-- <area href="https://www.youtube.com/" shape="poly" coords="" id="dvolcano"> -->
             <area href="https://www.youtube.com/" shape="poly" coords="" id="d4">
             <area href="https://www.youtube.com/" shape="poly" coords="" id="d5">
             <area href="https://www.youtube.com/" shape="poly" coords="" id="dunde">
@@ -101,6 +102,9 @@
                 document.getElementById("infobutton").click
                 console.log(document.getElementById("map").width)
                 console.log(document.getElementById("map").height)
+                document.getElementById("mycanvas").width = document.getElementById("map").width
+                document.getElementById("mycanvas").height = document.getElementById("map").height
+
                 var brick = [
                     {
                         "x": 0.58544921875,
