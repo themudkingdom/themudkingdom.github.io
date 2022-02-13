@@ -18,10 +18,10 @@
 
         .words {
             position: absolute;
-            font-weight: bold;
+            /* font-weight: bold; */
             top: 0px;
-            left: 0px;
-            text-align: center;
+            left: 5px;
+            /* text-align: center; */
 
         }
     </style>
@@ -56,6 +56,17 @@
             </div>
         </nav>
     </header>
+    <script>
+        function load() {
+            var paper_div = document.getElementById("paper_div")
+            var paper = document.getElementById("paper")
+            var location = "height:" + paper.height + "px;width:" + paper.width + "px;margin:0px auto;"
+            console.log(paper.height)
+            paper_div.style = location
+        }
+
+    </script>
+
     <main>
         <div id="paper_div" class="letter">
             <img id="paper" onload="load()" src="letter.png">
@@ -71,16 +82,6 @@
             </div>
         </div>
     </main>
-    <script>
-        function load() {
-            var paper_div = document.getElementById("paper_div")
-            var paper = document.getElementById("paper")
-            var location = "height:" + paper.height + "px;width:" + paper.width + "px;margin:0px auto;"
-            console.log(paper.height)
-            paper_div.style = location
-        }
-
-    </script>
 </body>
 
 </html>
