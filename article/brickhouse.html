@@ -11,6 +11,18 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
     <style>
+        /* @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap"); */
+
+        @font-face {
+            font-family: 'setofont';
+            src: url('/font/setofont.woff') format("woff"),
+                url('/font/setofont.ttf') format("truetype"),
+        }
+
+        body {
+            font-family: 'setofont', 'Noto Serif TC', serif;
+        }
+
         .letter {
             position: relative;
             /* text-align: center; */
@@ -74,7 +86,7 @@
 
     <main>
         <div id="paper_div" class="letter">
-            <img id="paper" style="margin:auto;" onload="load()" src="letter.jpg">
+            <img id="paper" style="width: 65vw; margin:auto;" onload="load()" src="letter.jpg">
             <div class="container words" id="inside">
                 <div class="row mb-1">
                     <span>泥巴你好，謝謝你願意跟巫師說你的故事。</span>
