@@ -14,6 +14,10 @@
         @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
         @import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap");
 
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
 
         header {
             font-family: 'Noto Sans TC', sans-serif !important;
@@ -21,35 +25,21 @@
 
         main {
             font-family: 'Noto Serif TC', serif;
-        }
-
-        .letter {
-            position: relative;
-            /* text-align: center; */
-        }
-
-        .words {
-            position: absolute;
-            /* font-weight: bold; */
-            /* top: 50px; */
-            /* text-align: center; */
+            /* margin: 0px auto; */
 
         }
 
-        .in {
-            /* box-shadow: 0 1px; */
-            /* border-bottom: 1px #ababae solid;
-            padding-bottom: 5px; */
-
+        #inside {
+            width: 65vw;
+            margin: 0px auto;
+            background-image: url('letter.jpg');
+            margin: 0px auto;
         }
     </style>
 
 </head>
 
-<!-- <body class="text-center"> -->
-
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -77,24 +67,14 @@
             </div>
         </nav>
     </header>
-    <script>
-        function load() {
-            var paper_div = document.getElementById("paper_div")
-            var paper = document.getElementById("paper")
-            var inside = document.getElementById("inside")
-            var location = "height:" + paper.height + "px;width:" + paper.width + "px;margin:0px auto;"
-            var inside_location = "height:" + paper.height + "px;width:" + paper.width * 0.8 + "px;margin:0px auto;left:" + paper.width * 0.1 + "px;top:" + paper.height * 0.023 + "px;"
-            console.log(paper.height)
-            paper_div.style = location
-            inside.style = inside_location
-        }
-
-    </script>
 
     <main>
-        <div id="paper_div"  class="letter">
-            <img id="paper" style="width: 65vw; margin:auto;" onload="load()" src="letter.jpg">
-            <div class="container words lh-lg fs-5" id="inside">
+        <div class="container lh-lg fs-5" id="inside">
+            <div id="count-height" style="margin:0px 1vw ;letter-spacing:4px;">
+                <div class="row mb-0">
+                    <span class="fs-6" style="visibility:hidden;">空行</span>
+                </div>
+
                 <div class="row mb-1">
                     <span class="in">泥巴你好，謝謝你願意跟巫師說你的故事。</span>
                 </div>
@@ -139,11 +119,9 @@
                 <div class="row mb-2 text-end">
                     <span>巫師 筆</span>
                 </div>
-
-
-
-
-
+                <div class="row mb-0">
+                    <span class="fs-6" style="visibility:hidden;">空行</span>
+                </div>
             </div>
         </div>
     </main>
