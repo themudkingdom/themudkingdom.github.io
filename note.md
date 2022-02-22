@@ -40,3 +40,11 @@ html基本引用
 
 csv轉json檔案的網站：https://csvjson.com/csv2json
 font file convert:https://cloudconvert.com/
+
+
+
+### scroll magic
+https://scrollmagic.io/examples/basic/reveal_on_scroll.html
+
+##### 想法
+在一開始的訊息區，希望可以是一則一則滑進頁面
