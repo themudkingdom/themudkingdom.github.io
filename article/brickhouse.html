@@ -33,7 +33,7 @@
             width: 65vw;
             margin: 60px auto;
             background-image: url('letter.jpg');
-            line-height :50px;
+            line-height: 50px;
 
             /* margin: 0px auto; */
         }
@@ -48,11 +48,11 @@
                 width: 100vw;
                 margin: 0px auto;
                 background-image: url('letter.jpg');
-                line-height :20px;
+                line-height: 50px;
             }
 
             #count-height {
-                margin: 0px 4vw;
+                margin: 0px 10vw;
                 letter-spacing: 4px;
             }
 
@@ -63,6 +63,7 @@
 </head>
 
 <body>
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -91,14 +92,65 @@
         </nav>
     </header>
 
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        style="display: none;" id="press">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">泥巴的來信</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <span class="in">巫師，我是蓋房子用的泥巴。</span>
+                    </div>
+                    <div class="row mb-1">
+                        <span class="in">我有很多厲害的朋友，他們都可以讓磚塊跟磚塊緊緊地黏合在一起。我很努力地伸展自己的身體，也很努力地變得有黏性，卻好像永遠都沒辦法變成我想像中優秀的自己。</span>
+                    </div>
+                    <div class="row mb-1">
+                        <span class="in">在大家認真蓋房子時，我有時候也會想躲進我自己的世界，但是我知道我不可以一直對自己太好、不可以一直只做自己想做的事、不可以一直在大家都很努力的時候停下腳步。</span>
+                    </div>
+
+                    <div class="row mb-1">
+                        <span class="in">那樣太爛了，我都這麼爛了還不改變嗎？如果我連這點事都做不好，我要怎麼成為優秀的泥巴？</span>
+                    </div>
+                    <div class="row mb-1">
+                        <span class="in">我會趕快振作，去做我該做的事情，等到我能蓋一間堅固的房子時再跟巫師說的。</span>
+                    </div>
+                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="self.location.href='https://ian933024.github.io/'">返回地圖</button>
+                    <button type="button" class="btn btn-primary">閱讀巫師回信</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            document.getElementById("press").click()
+            console.log("alert")
+        }
+    </script>
+
     <main>
         <div class="container fs-5" id="inside">
             <div id="count-height">
                 <div class="row mb-5">
                     <span class="fs-1" style="visibility:hidden;">空行</span>
                 </div>
-
                 <div class="row mb-1">
+                    <h1 class="in">任何時候，都別忘記對自己好</h1>
+                </div>
+
+                <div class="row mb-3">
                     <span class="in">泥巴你好，謝謝你願意跟巫師說你的故事。</span>
                 </div>
                 <div class="row mb-1">
