@@ -1,3 +1,4 @@
+
 .indexScrollOuter {
     width: 100vw;
     height: 100vh;
@@ -23,7 +24,7 @@
 
 .scene_bg {
     position: relative;
-    background-image: url("../fonts/scene_bg.png");
+    background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/fonts/scene_bg.png");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: auto;
@@ -76,7 +77,7 @@
     margin-left: -44px;
     width: 88px;
     height: 324px;
-    background-image: url("../img/index/car.png");
+    background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/car.png");
     opacity: 0;
     transition: all 0.3s ease-in
 }
@@ -98,7 +99,7 @@
 }
 
 .stickyCar {
-    background-image: url("../img/index/car.png");
+    background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/car.png");
     opacity: 1;
     position: absolute;
     width: 88px;
@@ -112,7 +113,7 @@
 }
 
 .carCrash {
-    background-image: url("../img/index/car.png");
+    background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/car.png");
     width: 88px;
     height: 324px;
     position: absolute;
@@ -123,7 +124,7 @@
 }
 
 .stopCar {
-    background-image: url("../img/index/car.png");
+    background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/car.png");
     width: 88px;
     height: 324px;
     margin: 100px auto 0;
@@ -263,7 +264,7 @@
 }
 
 .Roadblock {
-    background-image: url("../img/index/warring.png");
+    background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/warring.png");
     position: absolute;
     top: 1200px;
     right: calc(50vw - 145px);
@@ -290,7 +291,7 @@
 }
 
 .drunkman {
-    background-image: url("../img/index/drunkman.png");
+    background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/drunkman.png");
     position: absolute;
     top: 1125px;
     right: calc(50vw + 9px);
@@ -488,7 +489,7 @@
 }
 
 .judge {
-    background-image: url("../img/index/judge.png");
+    background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/judge.png");
     background-position: center center;
     position: absolute;
     bottom: 0;
@@ -513,7 +514,7 @@
 }
 
 .building {
-    background-image: url("../img/index/buildtop.png");
+    background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/buildtop.png");
     background-repeat: no-repeat;
     background-position: center top;
     width: 1502px;
@@ -545,7 +546,7 @@
 }
 
 .linkItem {
-    background-image: url("../img/index/adbg.png");
+    background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/adbg.png");
     width: 221px;
     height: 192px;
     display: inline-block;
@@ -576,7 +577,7 @@
     .linkItem {
         width: 260px;
         height: 75px;
-        background-image: url("../img/index/adbg_s.png");
+        background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/adbg_s.png");
         display: block;
         margin: 20px auto;
         line-height: 75px;
@@ -585,7 +586,7 @@
 }
 
 .buildbottom {
-    background-image: url("../img/index/buildbottom.png");
+    background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/buildbottom.png");
     background-repeat: no-repeat;
     background-position: center top;
     width: 1508px;
@@ -680,12 +681,12 @@
 }
 
 .bubble_btnL a {
-    background-image: url("../img/index/btn1.png");
+    background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/btn1.png");
     padding-right: 40px
 }
 
 .bubble_btnL a:hover {
-    background-image: url("../img/index/btn1_hover.png");
+    background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/btn1_hover.png");
     color: #ffffff
 }
 
@@ -708,12 +709,12 @@
 
     .bubble_btnL a {
         background-size: contain;
-        background-image: url("../img/index/btn_s.png");
+        background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/btn_s.png");
         padding-right: 0
     }
 
     .bubble_btnL a:hover {
-        background-image: url("../img/index/btn_s_hover.png")
+        background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/btn_s_hover.png")
     }
 }
 
@@ -722,12 +723,12 @@
 }
 
 .bubble_btnR a {
-    background-image: url("../img/index/btn2.png");
+    background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/btn2.png");
     padding-left: 40px
 }
 
 .bubble_btnR a:hover {
-    background-image: url("../img/index/btn2_hover.png");
+    background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/btn2_hover.png");
     color: #ffffff
 }
 
@@ -746,12 +747,12 @@
 @media screen and (max-width: 767px) {
     .bubble_btnR a {
         background-size: contain;
-        background-image: url("../img/index/btn_s.png");
+        background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/btn_s.png");
         padding-left: 0
     }
 
     .bubble_btnR a:hover {
-        background-image: url("../img/index/btn_s_hover.png")
+        background-image: url("https://www.cna.com.tw/project/20190719-drunkdriving/img/index/btn_s_hover.png")
     }
 }
 
