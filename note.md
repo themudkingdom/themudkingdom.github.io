@@ -48,3 +48,7 @@ https://scrollmagic.io/examples/basic/reveal_on_scroll.html
 
 ##### 想法
 在一開始的訊息區，希望可以是一則一則滑進頁面
+
+
+### 地圖模式改善
+用回底圖+物件的定位方法
