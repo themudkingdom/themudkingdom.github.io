@@ -5,6 +5,14 @@
     position: relative
 }
 
+.mes {
+    background-color: #0B090C;
+    width: 100vw;
+    height: 100vh;
+    position: relative
+}
+
+
 .blackBlock {
     width: 100%;
     height: 100px;
