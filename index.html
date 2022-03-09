@@ -33,6 +33,13 @@
             });
         });</script>
 
+    <script>
+        function cl() {
+            document.getElementById("infobutton").click()
+            console.log(document.getElementById("map").width)
+            console.log(document.getElementById("map").height)
+        }
+    </script>
 
 </head>
 
@@ -58,7 +65,7 @@
                         <li class="nav-item" aria-current="true"><a href="#" class="nav-link active px-2 ">泥巴王國</a>
                         </li>
                         <li class="nav-item"><a href="#" class="nav-link px-2 ">引導動畫</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 " data-bs-toggle="modal"
+                        <li class="nav-item"><a href="#" type="button" class="nav-link px-2 " data-bs-toggle="modal"
                                 data-bs-target="#info" id="infobutton">使用說明</a></li>
                     </ul>
                 </div>
@@ -84,7 +91,7 @@
     <main class="text-center">
         <!-- <iframe src="content.html" frameborder=1></iframe> -->
         <!-- <body > -->
-        <img id="map" src="mudkindom.png" class="im" alt="image map" usemap="#mudkindom" onload="load()" />
+        <img id="map" src="mudkindom.png" class="im" alt="image map" usemap="#mudkindom" onload="cl(),load()" />
         <div>
             <canvas id="mycanvas"></canvas>
         </div>
@@ -108,9 +115,6 @@
         </map>
         <script>
             function load() {
-                document.getElementById("infobutton").click
-                console.log(document.getElementById("map").width)
-                console.log(document.getElementById("map").height)
                 document.getElementById("mycanvas").width = document.getElementById("map").width
                 document.getElementById("mycanvas").height = document.getElementById("map").height
 
