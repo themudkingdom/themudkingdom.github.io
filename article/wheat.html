@@ -48,7 +48,7 @@
                 width: 100vw;
                 margin: 0px auto;
                 background-image: url('letter.jpg');
-                line-height :50px;
+                line-height: 50px;
             }
 
             #count-height {
@@ -82,19 +82,66 @@
                         <li class="nav-item"><a href="#" class="nav-link px-2 ">關於我們</a></li>
                         <li class="nav-item" aria-current="true"><a href="#" class="nav-link active px-2 ">泥巴王國</a>
                         </li>
+                        <li class="nav-item"><a href="https://ian933024.github.io/" class="nav-link px-2 ">返回地圖</a></li>
                         <li class="nav-item"><a href="#" class="nav-link px-2 ">引導動畫</a></li>
                         <li class="nav-item"><a href="#" class="nav-link px-2 ">使用說明</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
     </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">泥巴的來信</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <span class="in">巫師，我是上次那個螢光麥田裡的爛泥巴，距離那次寫信給你也過了一段時間了。</span>
+                    </div>
+                    <div class="row mb-1">
+                        <span
+                            class="in">我知道我難過的原因了，因為我不喜歡下雨天，只要一下雨，我就會沒辦法控制自己的濕度，就會想起以前那些被踩踏、被嫌棄的日子。我像你說的一樣告訴自己，我現在是田裡的泥巴了，我用我的肥沃幫助農夫們養育豐盛的作物，但只要下雨天，那種很難過的感覺，那種控制不住自己的感覺就會湧上來。</span>
+                    </div>
+                    <div class="row mb-1">
+                        <span class="in">我也不知道寫信告訴你這些有什麼用，就像上次和你說完我的回憶後，一樣什麼都沒有改變，雖然還是會想寫信給你呢。</span>
+                    </div>
+
+                    <div class="row mb-1">
+                        <span class="in">不知道什麼時候，我才可以把下雨天過得像晴天呢？</span>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        onclick="self.location.href='https://ian933024.github.io/'">返回地圖</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">閱讀巫師回信</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            document.getElementById("press").click()
+            console.log("alert")
+        }
+    </script>
+
+
+
 
     <main>
         <div class="container fs-5" id="inside">
             <div id="count-height">
                 <div class="row mb-5">
                     <span class="fs-1" style="visibility:hidden;">空行</span>
+                </div>
+                <div class="row mb-1">
+                    <h1 class="in">任何時候，都別忘記對自己好</h1>
                 </div>
 
                 <div class="row mb-1">
@@ -162,6 +209,9 @@
                 </div>
                 <div class="row mb-5">
                     <span class="in">相信下次下雨天時，你一定能和自己處的更好。</span>
+                </div>
+                <div class="row mb-3 text-end">
+                    <span>巫師 筆</span>
                 </div>
                 <div class="row mb-0">
                     <span class="fs-6" style="visibility:hidden;">空行</span>
