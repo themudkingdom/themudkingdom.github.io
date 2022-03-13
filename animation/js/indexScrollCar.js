@@ -16,7 +16,7 @@ function scrollHandlerMobile(s) {
 var scrollTop = 0,
     newScrollTop = 0,
     scrollContrl = !0,
-    startPos, stopPos1, stopPos2, stopPos3, stopPos4, stopPos5, endPos, dialoguePos1, dialoguePos2, dialoguePos3, morphyBallH = $(".morphyBall").height() + $(".mes").height(),
+    startPos, stopPos1, stopPos2, stopPos3, stopPos4, stopPos5, endPos, dialoguePos1, dialoguePos2, dialoguePos3, morphyBallH = $(".morphyBall").height() + $(".mes").height()+100,
     scrollIndex = 0,
     stopValue = 0;
 $(".menu-toggle").on("click", function () {
