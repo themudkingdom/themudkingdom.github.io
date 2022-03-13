@@ -123,8 +123,8 @@
 </head>
 
 <body class="index iScrollPos blackBG">
-    <script>
-        "use strict";
+    <!-- <script>
+        // "use strict";
 
         function DrunkDrivingProcess(s, o) {
             s >= stopPos1 ? s >= stopPos2 ? (stopValue = s + 300, $(".stickyMainItem").removeClass("behind"), $(".stickyMsg").removeClass("show"), $(".stickyCar").removeClass("hide"), $(".Roadblock").removeClass("show"), $(".drunkman").removeClass("show"), $(".DPO").removeClass("show"), stopValue >= stopPos3 && stopValue < stopPos4 ? ($(".stickyCar").addClass("hide"), $(".DPO").addClass("show"), console.log("in DPO")) : stopValue >= stopPos4 && stopValue < stopPos5 ? ($(".stickyCar").removeClass("hide"), $(".stickyMainItem").removeClass("behind"), $(".stickyMsg").addClass("show"), $(".stickyMsg").text("所以我就在訊息尾端都標上數字了。然後這一則訊息我寫長一點看看會不會發生甚麼事，這邊的文字內容就要麻煩鄒芸熹了喔！這樣應該夠長了(3)"), $(".DPO").removeClass("show")) : stopValue >= stopPos5 && stopValue < endPos ? ($(".EndList").removeClass("show"), $(".stickyMsg").addClass("show big"), $(".stickyMsg").html('<span>喔原來這裡還有一框，而且是用html嵌入</span><a class="inlineLink" href="epilogue.html" target="_blank">還有不同效果欸</a><span>不知道會長怎樣(4)</span>'), $(".judge").removeClass("show")) : stopValue >= endPos && ($(".stickyMsg").removeClass("show big"), $(".stickyCar").addClass("hide"), $(".stickyMainItem").addClass("behind"), $(".EndList").addClass(), setTimeout(function () {
@@ -160,7 +160,7 @@
             myEfficientFn()
         });
 //# sourceMappingURL=http://localhost:3000/_maps/indexScrollCar.js.map
-    </script>
+    </script> -->
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCLJ4Q5" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
@@ -421,7 +421,7 @@
 
 
     <script src="js/orientation.js"></script>
-    <!-- <script src="js/indexScrollCar.js"></script> -->
+    <script src="js/indexScrollCar.js"></script>
 </body>
 
 </html>
